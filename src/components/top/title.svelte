@@ -29,7 +29,7 @@
         text-align: center;
     }
     .big {
-        font-size: 87px;
+        font-size: 85px;
         font-family: 'Inter' ,serif;
         font-weight: 600;
         transition: all 0.5s ease;
@@ -38,7 +38,7 @@
         font-family: 'Inter', sans-serif;
         width: 100%;
         margin: 15px;
-        font-size: 25px;
+        font-size: 20px;
         transition: all 0.5s ease;
     }
     @media (max-width: 600px) {
