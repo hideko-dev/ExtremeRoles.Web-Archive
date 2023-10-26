@@ -59,10 +59,11 @@
     .bio {
         font-family: 'Inter', sans-serif;
         width: 100%;
-        margin: 25px 0px 10px 0px;
+        margin-top: 25px;
+        margin-bottom: 10px;
         font-size: 20px;
         transition: all 0.5s ease;
-        color: #797878;
+        color: #d4d4d4;
     }
     @media (max-width: 600px) {
         .big {
