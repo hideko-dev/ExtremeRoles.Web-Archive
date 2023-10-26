@@ -1,7 +1,7 @@
 <style>
     .scroll {
         position: absolute;
-        left: 12%;
+        left: 50%;
         top: 85%;
         height: 50px;
     }
