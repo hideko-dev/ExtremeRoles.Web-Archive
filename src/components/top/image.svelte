@@ -7,10 +7,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2rem auto 0;
+        margin: 50px auto 0;
         background: #262626;
-        width: 25rem;
-        height: 15rem;
+        width: 35rem;
+        height: 20rem;
         border-radius: 10px;
     }
 </style>

@@ -30,8 +30,8 @@
         top: 100%;
         left: 0;
         width: 100%;
-        height: 1px;
-        background: linear-gradient(to right, #6600ff,transparent);
+        height: 2px;
+        background: linear-gradient(to right, transparent, rgba(52, 52, 52, 1.5), transparent);
     }
     .content {
         z-index: 10;

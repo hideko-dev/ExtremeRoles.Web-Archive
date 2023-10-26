@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
     import { fade } from 'svelte/transition';
     import Fa from "svelte-fa";
-    import { faBolt, faCloud, faDiceD6, faFire, faLanguage } from "@fortawesome/free-solid-svg-icons";
+    import { faBolt, faCloud, faFire, faLanguage } from "@fortawesome/free-solid-svg-icons";
     import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
     let width = 0;
     let borderColor = "transparent";
