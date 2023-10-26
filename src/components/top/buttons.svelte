@@ -5,20 +5,32 @@
     import Sponser from "./btns/sponser.svelte";
 </script>
 
-<div class="btns">
-    <Features/>
-    <Docs/>
-    <Repo/>
-    <Sponser/>
+<div class="btn">
+    <div class="b"><Features/></div>
+    <div class="b"><Docs/></div>
+    <div class="b"><Repo/></div>
+    <div class="b"><Sponser/></div>
 </div>
 
 <style>
-    .btns {
-        display: grid;
-        grid-template-columns: repeat(2, 0fr);
-        grid-gap: 10px;
+    .btn {
         padding: 20px;
-        width: 25rem;
         margin: 0 auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .b {
+        margin-inline: 5px;
+    }
+    @media (max-width: 750px) {
+        .btn {
+            display: grid;
+            grid-template-columns: repeat(2, 0fr);
+            grid-gap: 10px;
+        }
+        .b {
+            margin-inline: 0;
+        }
     }
 </style>
