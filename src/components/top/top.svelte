@@ -1,6 +1,7 @@
 <script>
     import Title from "./title.svelte"
     import Btns from "./buttons.svelte";
+    import Image from "./image.svelte";
     import Mouse from "./mouse.svelte";
 </script>
 
@@ -9,6 +10,7 @@
         <div class="content">
             <Title/>
             <Btns/>
+            <Image/>
             <Mouse/>
         </div>
 </div>
@@ -20,6 +22,7 @@
         justify-content: center;
         align-items: center;
         background: rgb(23,22,23);
+        z-index: 100;
     }
     .top::before {
         position: absolute;

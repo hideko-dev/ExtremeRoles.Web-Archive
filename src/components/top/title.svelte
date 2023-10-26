@@ -15,7 +15,7 @@
 <div class="title">
     <div class="content">
         <p class="big" style="opacity: {titleOpacity}">ExtremeRoles</p>
-        <p class="bio" style="opacity: {bioOpacity}">Very powerful, designed for advanced users, and mods for many things, AmongUs.</p>
+        <p class="bio" style="opacity: {bioOpacity}">AmongUs Mod for advanced users.</p>
     </div>
 </div>
 
@@ -23,20 +23,22 @@
     .title {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .content {
-        margin: 0 0 auto 10%;
+        text-align: center;
     }
     .big {
-        font-size: 90px;
+        font-size: 60px;
         font-family: 'Inter' ,serif;
         font-weight: 600;
         transition: all 0.5s ease;
     }
     .bio {
         font-family: 'Inter', sans-serif;
-        width: 70%;
-        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
         transition: all 0.5s ease;
     }
     @media (max-width: 600px) {

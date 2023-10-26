@@ -39,7 +39,6 @@
 
 <style>
     .card {
-        margin: 0 0 auto 10%;
         height: 50px;
         border: 1px solid;
         border-radius: 10px;

@@ -12,8 +12,9 @@
 
 <style>
     .btns {
-        margin-top: 1.45rem;
+        margin-top: 1rem;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 </style>
