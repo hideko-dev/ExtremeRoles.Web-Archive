@@ -9,7 +9,7 @@
     let bgColor = "transparent";
     const featureArray = [
         { title: 'とても強力', icon: faBolt },
-        { title: '80以上の役職', icon: faFire },
+        { title: '80+ の役職', icon: faFire },
         { title: '公開ソース', icon: faGithubAlt },
         { title: 'APIの搭載', icon: faCloud },
         { title: '多言語対応', icon: faLanguage },
