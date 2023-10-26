@@ -10,8 +10,7 @@
     const featureArray = [
         { title: 'とても強力', icon: faBolt },
         { title: '80以上の役職', icon: faFire },
-        { title: 'オープンソース', icon: faGithubAlt },
-        { title: '迅速アップデート', icon: faDiceD6 },
+        { title: '公開ソース', icon: faGithubAlt },
         { title: 'APIの搭載', icon: faCloud },
         { title: '多言語対応', icon: faLanguage },
     ];
@@ -23,7 +22,7 @@
             contentOpacity = 1;
         }, 800);
         setTimeout(() => {
-            width = 190;
+            width = 160;
             borderColor = "#2d2d2d";
             bgColor = "rgba(30, 30, 30, 0.6)"
         }, 500)

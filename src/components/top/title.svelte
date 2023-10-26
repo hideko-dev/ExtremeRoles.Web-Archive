@@ -29,7 +29,7 @@
         text-align: center;
     }
     .big {
-        font-size: 60px;
+        font-size: 70px;
         font-family: 'Inter' ,serif;
         font-weight: 600;
         transition: all 0.5s ease;
