@@ -3,7 +3,7 @@
     import Docs from "./btns/docs.svelte";
     import Repo from "./btns/repo.svelte";
     import Sponser from "./btns/sponser.svelte";
-    let scale = 1.25;
+    let scale = 1.1;
     let margin = 27;
 </script>
 
