@@ -15,28 +15,33 @@
 <div class="title">
     <div class="content">
         <p class="big" style="opacity: {titleOpacity}">ExtremeRoles</p>
-        <p class="bio" style="opacity: {bioOpacity}">上級者向けのAmongUsのMod</p>
+        <p class="bio" style="opacity: {bioOpacity}">Very powerful, designed for advanced users, and mods for many things, AmongUs.</p>
     </div>
 </div>
 
 <style>
     .title {
         display: flex;
-        justify-content: center;
         align-items: center;
     }
     .content {
-        text-align: center;
+        margin: 0 0 auto 10%;
     }
     .big {
-        font-size: 60px;
+        font-size: 90px;
         font-family: 'Inter' ,serif;
         font-weight: 600;
         transition: all 0.5s ease;
     }
     .bio {
-        font-family: 'Noto Sans JP', sans-serif;
-        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        width: 70%;
+        font-size: 20px;
         transition: all 0.5s ease;
+    }
+    @media (max-width: 600px) {
+        .big {
+            font-size: 50px;
+        }
     }
 </style>

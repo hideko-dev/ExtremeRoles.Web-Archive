@@ -17,7 +17,11 @@
     ];
     let currentIndex = 0;
     let isVisible = true;
+    let contentOpacity = 0;
     onMount(() => {
+        setTimeout(() => {
+            contentOpacity = 1;
+        }, 800);
         setTimeout(() => {
             width = 190;
             borderColor = "#2d2d2d";
@@ -35,7 +39,7 @@
 
 <style>
     .card {
-        margin: 1rem auto;
+        margin: 0 0 auto 10%;
         height: 50px;
         border: 1px solid;
         border-radius: 10px;
@@ -43,7 +47,8 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
+        user-select: none;
     }
 
     .feature {
@@ -67,7 +72,7 @@
         margin-left: 0.5rem;
         white-space: nowrap;
         font-family: "Noto Sans JP", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
     }
     .visible {
         opacity: 1;
@@ -77,7 +82,7 @@
 <div class="card" style="width: {width}px; border-color: {borderColor}; background: {bgColor}">
     {#each featureArray as feature, index}
         {#if index === currentIndex}
-            <div in:fade={{duration: 300}} class="{isVisible ? 'feature visible' : 'feature'}">
+            <div in:fade={{duration: 300}} class="{isVisible ? 'feature visible' : 'feature'}" style="opacity: {contentOpacity}">
                 <div class="icon">
                     <Fa icon={feature.icon} fw/>
                 </div>
