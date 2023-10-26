@@ -3,8 +3,8 @@
     import Docs from "./btns/docs.svelte";
     import Repo from "./btns/repo.svelte";
     import Sponser from "./btns/sponser.svelte";
-    let scale = 1.25;
-    let margin = 27;
+    const scale = 1.125;
+    const margin = 30;
 </script>
 
 <div class="btn">
@@ -29,7 +29,7 @@
             grid-gap: 10px;
         }
         .b {
-            margin-inline: 0;
+            margin-inline: 5;
         }
     }
 </style>
