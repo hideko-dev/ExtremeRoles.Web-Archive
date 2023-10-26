@@ -27,7 +27,7 @@
                 currentIndex = (currentIndex + 1) % featureArray.length;
                 isVisible = true;
             }, 600);
-        }, 1500);
+        }, 3000);
     });
     // TODO: featureArrayの切り替えをアニメーションのホーイール的なものにしたい
 </script>
