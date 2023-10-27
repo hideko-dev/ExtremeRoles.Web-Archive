@@ -2,13 +2,22 @@
     import Btn from "./btn.svelte";
     import {faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
     import {faBook, faHeart} from "@fortawesome/free-solid-svg-icons";
+
+    const showButton = [
+        { herf: "https://github.com/yukieiji/ExtremeRoles/releases/latest",  text: "最新版のダウンロード", icon: "", },
+        { herf: "https://yukieiji.github.io/ExtremeRoles.Docs/",  text: "Wiki", icon: faBook, },
+        { herf: "https://discord.com",  text: "Discord", icon: faDiscord, },
+        { herf: "https://github.com/sponsors/yukieiji",  text: "スポンサー", icon: faHeart, }
+    ]
+
 </script>
 
 <div class="buttonRow">
-    <div class="button"><Btn href="https://discord.com" text="ディスコード" icon={faDiscord}/></div>
-    <div class="button"><Btn href="https://exr-docs.vercel.app" text="ドキュメント" icon={faBook}/></div>
-    <div class="button"><Btn href="https://github.com/yukieiji/ExtremeRoles" text="リポジトリ" icon={faGithub}/></div>
-    <div class="button"><Btn href="https://sponsers.com" text="スポンサー" icon={faHeart}/></div>
+    {#each showButton as button}
+    <div class="button">
+        <Btn href={button.herf} text={button.text} icon={button.icon}/>
+    </div>
+    {/each}
 </div>
 
 <style>
