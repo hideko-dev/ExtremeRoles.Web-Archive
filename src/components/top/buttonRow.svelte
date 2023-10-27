@@ -1,10 +1,10 @@
 <script>
-    import Btn from "./btn.svelte";
+    import Button from "./button.svelte";
     import {faDiscord } from "@fortawesome/free-brands-svg-icons";
     import {faBook, faHeart} from "@fortawesome/free-solid-svg-icons";
 
     const showButton = [
-        { herf: "https://github.com/yukieiji/ExtremeRoles/releases/latest",  text: "最新版のダウンロード", icon: "", }, // <= ここだけ色変えたい
+        { herf: "https://github.com/yukieiji/ExtremeRoles/releases/latest",  text: "最新版のダウンロード", icon: "", }, // <= ここだけ色変えたい、別ボタンでもいいかもね
         { herf: "https://yukieiji.github.io/ExtremeRoles.Docs/",  text: "Wiki", icon: faBook, },
         { herf: "https://discord.com",  text: "Discord", icon: faDiscord, },
         { herf: "https://github.com/sponsors/yukieiji",  text: "スポンサー", icon: faHeart, }
@@ -15,7 +15,7 @@
 <div class="buttonRow">
     {#each showButton as button}
     <div class="button">
-        <Btn href={button.herf} text={button.text} icon={button.icon}/>
+        <Button href={button.herf} text={button.text} icon={button.icon}/>
     </div>
     {/each}
 </div>
