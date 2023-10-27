@@ -23,7 +23,14 @@
     });
 </script>
 
-<a   use:ripple={{ color: "rgba(255,255,255,0.15)" }} href={href} class="btn" style="width: {width}px; border-color: {borderColor}; background: {bgColor}" on:mouseenter={() => {borderColor = "#8d8d8d";}} on:mouseleave={() => {borderColor = "#2d2d2d";}}>
+<a   
+    use:ripple={{ color: "rgba(255,255,255,0.15)" }}
+    href={href}
+    class="button"
+    style="width: {width}px;
+    border-color: {borderColor};
+    background: {bgColor}"
+    on:mouseenter={() => {borderColor = "#8d8d8d";}} on:mouseleave={() => {borderColor = "#2d2d2d";}}>
     <div class="content" style="opacity: {contentOpacity}">
         <div class="icon">
             <Fa icon={icon}/>
@@ -34,7 +41,7 @@
 
 
 <style>
-    .btn {
+    .button {
         height: 50px;
         border: 1px solid;
         border-radius: 10px;
@@ -48,7 +55,7 @@
         user-select: none;
         text-decoration: none;
     }
-    .btn:hover {
+    .button:hover {
         cursor: pointer;
     }
     .content {
@@ -57,7 +64,7 @@
         align-items: center;
         transition: all 0.3s ease;
     }
-    .btn p {
+    .button p {
         margin-left: 5px;
         color: white;
     }
