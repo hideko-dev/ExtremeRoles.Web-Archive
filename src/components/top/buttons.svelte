@@ -18,6 +18,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        row-gap: 27px;
+        flex-wrap: wrap;
     }
     .button {
         scale: 1.12;
