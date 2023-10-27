@@ -1,4 +1,14 @@
-<div class="image">
+<script>
+    import {onMount} from "svelte";
+    let height = 0;
+    onMount(() => {
+        setTimeout(() => {
+            height = 20
+        }, 500);
+    });
+</script>
+
+<div class="image" style="height: {height}rem">
     <p>もちろんここに貼りますよね？</p>
 </div>
 
@@ -10,7 +20,8 @@
         margin: 50px auto 0;
         background: #262626;
         width: 35rem;
-        height: 20rem;
         border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.3s ease;
     }
 </style>

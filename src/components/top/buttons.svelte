@@ -1,20 +1,21 @@
 <script>
-    import Features from "./btns/features.svelte";
-    import Docs from "./btns/docs.svelte";
-    import Repo from "./btns/repo.svelte";
-    import Sponser from "./btns/sponser.svelte";
-    const scale = 1.125;
-    const margin = 18;
+    import Btn from "./btn.svelte";
+    import {faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
+    import {faBook, faHeart} from "@fortawesome/free-solid-svg-icons";
 </script>
 
 <div class="btn">
-    <div class="b" style="scale: {scale}; margin-inline: {margin}px"><Features/></div>
-    <div class="b" style="scale: {scale}; margin-inline: {margin}px"><Docs/></div>
-    <div class="b" style="scale: {scale}; margin-inline: {margin}px"><Repo/></div>
-    <div class="b" style="scale: {scale}; margin-inline: {margin}px"><Sponser/></div>
+    <div class="b"><Btn href="https://discord.com" text="ディスコード" icon={faDiscord}/></div>
+    <div class="b"><Btn href="https://exr-docs.vercel.app" text="ドキュメント" icon={faBook}/></div>
+    <div class="b"><Btn href="https://github.com/yukieiji/ExtremeRoles" text="リポジトリ" icon={faGithub}/></div>
+    <div class="b"><Btn href="https://sponsers.com" text="スポンサー" icon={faHeart}/></div>
 </div>
 
 <style>
+    .b {
+        scale: 1.12;
+        margin-inline: 18px;
+    }
     .btn {
         padding: 20px;
         margin: 0 auto 0;
@@ -27,9 +28,6 @@
             display: grid;
             grid-template-columns: repeat(2, 0fr);
             grid-gap: 10px;
-        }
-        .b {
-            margin-inline: 5;
         }
     }
 </style>

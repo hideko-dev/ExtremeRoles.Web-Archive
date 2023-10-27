@@ -6,7 +6,6 @@
 </script>
 
 <div class="top">
-<!--    <img class="bg" src="top_bg.webp" alt="img">-->
         <div class="content">
             <Title/>
             <Btns/>
@@ -21,7 +20,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgb(23,22,23);
+        background: url("public/bg.svg") no-repeat center/cover;
         z-index: 100;
     }
     .top::before {
@@ -34,7 +33,7 @@
         background: linear-gradient(to right, transparent, rgba(52, 52, 52, 1.5), transparent);
     }
     .content {
-        z-index: 10;
         width: 100%;
+        z-index: 100;
     }
 </style>

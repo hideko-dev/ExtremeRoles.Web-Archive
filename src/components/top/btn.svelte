@@ -1,9 +1,12 @@
 <script>
+    import {faCircle} from "@fortawesome/free-solid-svg-icons";
+
+    export let href = "";
+    export let icon = faCircle;
+    export let text = "Text";
     import { onMount } from 'svelte';
     import { ripple } from "svelte-ripple-action";
     import Fa from "svelte-fa";
-    import {faBook, faHeart} from "@fortawesome/free-solid-svg-icons";
-    import {faGithub} from "@fortawesome/free-brands-svg-icons";
     let width = 0;
     let borderColor = "transparent";
     let bgColor = "transparent";
@@ -20,12 +23,12 @@
     });
 </script>
 
-<a   use:ripple={{ color: "rgba(255,255,255,0.15)" }} href="https://exr-docs.vercel.app" class="btn" style="width: {width}px; border-color: {borderColor}; background: {bgColor}" on:mouseenter={() => {borderColor = "#8d8d8d";}} on:mouseleave={() => {borderColor = "#2d2d2d";}}>
+<a   use:ripple={{ color: "rgba(255,255,255,0.15)" }} href={href} class="btn" style="width: {width}px; border-color: {borderColor}; background: {bgColor}" on:mouseenter={() => {borderColor = "#8d8d8d";}} on:mouseleave={() => {borderColor = "#2d2d2d";}}>
     <div class="content" style="opacity: {contentOpacity}">
         <div class="icon">
-            <Fa icon={faHeart}/>
+            <Fa icon={icon}/>
         </div>
-        <p>スポンサー</p>
+        <p>{text}</p>
     </div>
 </a>
 
