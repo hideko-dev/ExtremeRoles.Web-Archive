@@ -22,8 +22,8 @@
         flex-wrap: wrap;
     }
     .button {
-        scale: 1.12;
-        margin-inline: 18px;
+        scale: 1.125;
+        margin-inline: 27px;
     }
     @media (max-width: 750px) {
         .button {
