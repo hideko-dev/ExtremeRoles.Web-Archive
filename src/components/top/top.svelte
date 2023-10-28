@@ -1,6 +1,6 @@
 <script>
     import Title from "./title.svelte"
-    import Btns from "./buttons.svelte";
+    import ButtonRow from "./buttonRow.svelte";
     import Image from "./image.svelte";
     import Mouse from "./mouse.svelte";
 </script>
@@ -8,7 +8,7 @@
 <div class="top">
         <div class="content">
             <Title/>
-            <Btns/>
+            <ButtonRow/>
             <Image/>
             <Mouse/>
         </div>

@@ -17,7 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px auto 0;
+        margin: 75px auto 0;
         background: #262626;
         width: 35rem;
         border-radius: 10px;
