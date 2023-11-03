@@ -1,1 +1,55 @@
-import{writable}from"svelte/store";const ae=window.addEventListener;export function createBetween(s1,e1){const st=writable(false);const hs=()=>{const sy = window.sy;if (sy >= s1 && sy <= e1){st.set(true)}else{st.set(false)}};ae("scroll", hs);hs();return st;}export function createSingleSet(pos){const st=writable(false);const hs=()=>{const sy=window.sy;if(sy > pos){st.set(true)}};ae("scroll", hs);hs();return st;}export function createSingleBool(pos){const st=writable(false);const hs=()=>{const sy=window.sy;if(sy > pos){st.set(true);}else{st.set(false)}};ae("scroll", hs);hs();return st;}
+// onScroll.js
+import { writable } from "svelte/store";
+
+export function createBetween(start, end) {
+    const status = writable(false);
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY >= start && scrollY <= end) {
+            status.set(true);
+        } else {
+            status.set(false);
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // 初期化時にも実行して初期状態を設定
+
+    return status;
+}
+
+// 指定位置を越えたらずっと true のままにする
+export function createSingleSet(position) {
+    const status = writable(false);
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY > position) {
+            status.set(true);
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // 初期化時にも実行して初期状態を設定
+
+    return status;
+}
+
+export function createSingleBool(position) {
+    const status = writable(false);
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY > position) {
+            status.set(true);
+        } else {
+            status.set(false);
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // 初期化時にも実行して初期状態を設定
+
+    return status;
+}

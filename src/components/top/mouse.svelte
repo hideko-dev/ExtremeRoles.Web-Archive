@@ -2,7 +2,7 @@
     .scroll {
         position: absolute;
         left: 50%;
-        top: 85%;
+        top: 88%;
         height: 50px;
     }
 
